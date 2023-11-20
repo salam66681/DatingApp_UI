@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Dating App</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+   <div class="cmbody" id="imbody">
+      <div class="cnt" id="logobody">
+        <div id="mainp"> <p id="logo"> Dating App</p></div>
+        <div id="subp"> <p id="moto">Dating App helps you connect with your soulmate.</p></div>
+
+      </div>
+       <div class="cnt" id="ifrbody">
+          <div class="parahd"> 
+            <p>Please Fill This:<sub>(fields marked with <sup>*</sup> are mandatory)</sub></p>
+          </div>
+         <div>
+         <form>
+         <div class="bdetail">
+          <div class="bdetaillabel"> <label for="fname">First Name:<sup>*</sup></label> </div>
+          <div class="bdetailinput"> <input type="text" id="fname" name="fname" placeholder="First Name" required> </div><br>
+         </div>
+         <div class="bdetail"> 
+             <div class="bdetaillabel"> <label for="lname">Last Name:<sup>*</sup></label> </div>
+             <div class="bdetailinput"> <input type="text" id="lname" name="lname" placeholder="Last Name" required> </div>
+         </div>
+         <div class="bdetail"> 
+               <div class="bdetaillabel"> <label for="email">Email Address:<sup>*</sup></label> </div>
+               <div class="bdetailinput"> <input type="email" id="email" name="email" placeholder="abc@anymail.com" required> </div>
+         </div>
+          <div class="bdetail"> 
+               <div class="bdetaillabel"> <label for="tel">Phone Number:<sup>*</sup></label> </div>
+               <div class="bdetailinput"> <input type="tel" id="pnumber" name="pnumber" placeholder="918........." required> </div>
+         </div>
+          <div class="bdetail"> 
+                 <div class="bdetaillabel"> <label for="gender">Gender:</label> </div>
+                 <div class="bdetailinput"> 
+                  <div class="rinput"> <input type="radio" class="radio" id="male" name="gender" value="Male">
+                  <label for="male">Male</label> </div>
+                  <div class="rinput"> <input type="radio" class="radio" id="female" name="gender" value="Female">
+                  <label for="female">Female</label> </div>
+                  <div class="rinput"> <input type="radio" class="radio" id="others" name="gender" value="others">
+                  <label for="others">Others</label> </div>
+                  </div>
+           </div>
+           <div class="bdetail"> 
+                 <div class="bdetaillabel"> <label for="Date">Date of proposed outing:<sup>*</sup></label> </div>
+                 <div class="bdetailinput"> <input type="date" id="outingdate" name="outingdate" required> </div>
+          </div>
+          <div>
+              <div class="parad"> <p>Check all that apply to you-</p> </div>
+              <div class="checkcontent">
+                <div class="checkinput"> <input type="checkbox" class="chck" id="personalinfo1" name="personalinfo1" value="tatoo/piercing"> </div>
+                 <div class="checklabel"> <label for="personalinfo1">I have tattoos and/or piercings.</label> </div>
+              </div>
+              <div class="checkcontent">
+                  <div class="checkinput"> <input type="checkbox" class="chck" id="personalinfo2" name="personalinfo2" value="agedifference"> </div>
+                  <div class="checklabel"> <label for="personalinfo2">I am more than 2 years older than my daughter.</label> </div>
+              </div>
+              <div class="checkcontent">
+                  <div class="checkinput"> <input type="checkbox" class="chck" id="personalinfo3" name="personalinfo3" value="vehicle"> </div>
+                  <div class="checklabel"> <label for="personalinfo3">I own a panel van or Ferrari.</label> </div>
+              </div>
+              <div class="checkcontent">
+                  <div class="checkinput"> <input type="checkbox" class="chck" id="personalinfo4" name="personalinfo4" value="work"> </div>
+                  <div class="checklabel"> <label for="personalinfo4">I work full-time.</label> </div>
+              </div>
+              <div class="checkcontent">
+                   <div class="checkinput"> <input type="checkbox" class="chck" id="personalinfo5" name="personalinfo5" value="parentsinfo"> </div>
+                   <div class="checklabel"> <label for="personalinfo5">My parents are rich.</label> </div>
+              </div>
+              <div class="checkcontent">
+                   <div class="checkinput"> <input type="checkbox" class="chck" id="personalinfo6" name="personalinfo6" value="datelocation" required> </div>
+                   <div class="checklabel"> <label for="personalinfo6">Is the date at a <select id="datelocation" name="datelocation">
+                       <option value="blank">-blank-</option>
+                       <option value="public">Public</option>
+                       <option value="private">Private</option>
+                       </select> location.<sup>*</sup>
+                        </label> </div>
+               </div>
+          </div>
+      <br><br>
+      <div class="sldiv">
+        <div class="sldivlabel"> <label for="educationlevel">My highest Education level is:<sup>*</sup></label> </div>
+         <div class="sldivinput"> <select id="educationlevel" name="educationlevel" required>
+        <option value="blank">-blank-</option>
+        <option value="none">None</option>
+        <option value="uneducated">Uneducated</option>
+        <option value="highschool">High School</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="graduate">Graduate</option>
+        <option value="masters">Masters</option>
+        <option value="others">others</option>
+         </select>
+       </div>
+    </div>
+      <div id="textarea">
+      <textarea name="message" style="width: 420px; height: 95px;" placeholder="Why do you want to date my daughter (50 words input)?" required></textarea> 
+      </div>
+        <div>
+         <div class="parad"> <p>Reference Contact:<sup>*</sup></p> </div>
+         <div class="refdetail">
+            <div class="reflabel"> <label for="name">Name:</label> </div>
+            <div class="refinput"> <input type="text" id="name" name="name" placeholder="Full name" required> </div>
+         </div>
+         <div class="refdetail">
+           <div class="reflabel"> <label for="relation">Relation:</label> </div>
+           <div class="refinput"> <select id="relation" name="relation" required>
+         <option value="blank">-blank-</option>
+          <option value="father">Father</option>
+          <option value="mother">Mother</option>
+          <option value="siblings">Siblings</option>
+          <option value="friend">Friend</option>
+          <option value="others">others</option>
+          </select> </div>
+        </div>
+        <div class="refdetail">
+          <div class="reflabel"> <label for="tel">Contact Number:</label> </div>
+           <div class="refinput"> <input type="tel" id="cnumber" name="cnumber" placeholder="918........." required> </div>
+        </div>
+        </div>
+        <br><br>
+        <div class="sldiv">
+          <div class="sldivlabel"> <label for="myfile">Bank Statement (optional):</label> </div>
+          <div class="sldivinput"> <input type="file" id="statement" name="statement"> </div>
+        </div>
+          <div id="line"> <hr> </div>
+        <div class="button">
+         <div class="btninput"> <input id="button1" type="submit" value="Submit"> </div>
+          <div class="btninput"> <input id="button2" type="reset" value="Reset"> </div>
+        </div>
+         </form>
+
+         </div>
+       </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
